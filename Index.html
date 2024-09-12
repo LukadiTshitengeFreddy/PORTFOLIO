@@ -37,30 +37,45 @@
             rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous">
+            <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
         <title>PORTFOLIO</title>
     </head>
     <body>
         <header>
-            <div><a href="Index.html"><img src="assets/LTF.png" alt="Logo"></a></div>
-            <div><a href=""><img src="assets/169062387.jpg" alt="" class="img_profil_header"></a></div>
+            <div>
+                <a href="Index.html"><img class="logoheader" src="assets/logo.png"
+                        alt="Logo">
+                </a>
+            </div>
             <nav>
                 <a href="#accueil"><div class="navlink">ACCUEIL</div></a>
                 <a href="#skills"><div class="navlink">SKILLS</div></a>
                 <a href="#contact"><div class="navlink">CONTACTEZ-MOI</div></a>
                 <a href="#a_propos"><div class="navlink">A PROPOS</div></a>
             </nav>
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-target="#staticBackdrop"><img src="assets/169062387.jpg" alt
+                        class="img_profil_header">
+                </a>
+            </div>
+           
         </header>
         <div class="container">
+
             <div class="textpresentation" id="accueil">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit,
-                    beatae. Nesciunt eius minima eos velit labore maxime ratione
-                    possimus repellat laudantium, amet ab ullam magnam ipsam sequi
-                    aliquid animi quo.
+                    Bienvenue sur mon <strong>portfolio !</strong> Vous découvrirez ici une variété 
+                    de compétences que j'ai développées au fil des ans.
+                     Mon expertise s'étend de la conception graphique à la gestion 
+                     de projets, en passant par le développement web et 
+                     le marketing digital. Explorez mes projets pour voir comment 
+                     je mets en pratique ces compétences et comment je peux les appliquer 
+                     pour répondre à vos besoins. N'hésitez pas à me contacter pour toute 
+                     collaboration ou question !
                 </p>
             </div>
-            <section class="" id="skills">
+            <section class id="skills">
                 <div>
                     <div>HTML5</div>
                     <div>CSS3</div>
@@ -74,12 +89,12 @@
                     <div>PORTFOLIO</div>
                 </div>
             </section>
-            <section class="" id="contact">
+            <section class id="contact">
                 <div>IMG-CONTACT</div>
                 <div>FORMULAIRE DE CONTACT</div>
             </section>
         </div>
-       
+
         <footer class="a_propos">
             <div class="container">
                 <div>
@@ -87,8 +102,10 @@
                         <h3>A propos</h3>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quod
-                        praesentium facilis delectus temporibus natus esse, magnam
-                        quidem non. Nobis saepe similique illum aut! Cum, ab nisi.
+                        praesentium facilis delectus temporibus natus esse,
+                        magnam
+                        quidem non. Nobis saepe similique illum aut! Cum, ab
+                        nisi.
                         Architecto at debitis quo.
                     </div>
                 </div>
@@ -98,7 +115,7 @@
                     <div>X</div>
                     <div>FACEBOOK</div>
                 </div>
-    
+
                 <div>
                     <h3>LIEU DE TRAVAIL</h3>
                     <div>
@@ -109,4 +126,21 @@
             </div>
         </footer>
     </body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </html>

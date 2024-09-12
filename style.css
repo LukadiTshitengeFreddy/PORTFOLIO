@@ -15,8 +15,15 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(168, 167, 167);
     
+}
+.logoheader{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    margin: 10px;
 }
 nav{
     display: flex;
@@ -25,7 +32,7 @@ nav{
 }
 .navlink{
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 5px;
     margin-top: 15px;
     padding: 5px;
     color: black;
@@ -41,6 +48,7 @@ nav{
     height: 50px;
     border-radius: 50%;
     margin-top: 7px;
+    margin: 10px;
 }
 .container{
     margin-top: 80px;
