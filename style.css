@@ -24,6 +24,7 @@ header{
     background-color: rgb(255, 255, 255);
     border-radius: 50px;
     margin: 10px;
+    margin-left: 20px;
 }
 nav{
     display: flex;
@@ -49,9 +50,44 @@ nav{
     border-radius: 50%;
     margin-top: 7px;
     margin: 10px;
+    margin-right: 20px;
 }
 .container{
     margin-top: 80px;
     width: 95%;
     padding: 2%;
+}
+.elementModal{
+    padding: 25px;
+}
+.souselementModal{
+    padding: 5px;
+    font-weight: bold ;
+}
+.textAcuueil{
+    color: rgb(223, 149, 149);
+}
+.textInModal{
+    margin-top: 20px;
+}
+.wordTextAccueil{
+    width: 70%;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+#texte{
+    position: fixed;
+    width: 70%;
+}
+.texte{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    line-height: 100px;
+}
+.texte.visible {
+    opacity: 1;
 }
